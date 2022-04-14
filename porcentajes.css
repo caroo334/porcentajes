@@ -1,6 +1,6 @@
 body{
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,53,87,0.9976365546218487) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,53,87,0.9976365546218487) 35%, rgba(255,255,255,1) 100%);
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -44,11 +44,29 @@ p{
     font-weight: bold;
 }
 
-@media (min-width: 700px){
+@media (min-width: 650px){
     body{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    
+}
+@media (max-width: 350px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 250px;
+        margin-top: 60px;
+    }
+    input{
+        margin: 20px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
     }
 }
